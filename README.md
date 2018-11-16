@@ -1,7 +1,8 @@
-# Calc+-
+# CALC+-
 Trabalho para composição de nota da disciplina Programação Linear do curso Análise e desenvolvimento de sistemas na Fatec Mogi das Cruzes
 
-##Objetivo
+## Objetivo
+
 Este programa foi desenvolvido para auxiliar na resolução de problemas de otimização capaz de minimizar ou maximizar 2 variáveis.
 Foi utilizada para a resolução os sistemas de até 3x3 através da Regra de Sarrus.
 
