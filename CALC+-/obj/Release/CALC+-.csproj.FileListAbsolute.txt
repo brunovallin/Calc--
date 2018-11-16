@@ -1,0 +1,9 @@
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\bin\Release\CALC+-.exe.config
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\bin\Release\CALC+-.exe
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\bin\Release\CALC+-.pdb
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Release\CALC__.TelaPrincipal.resources
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Release\CALC__.telaPrincipalForm.resources
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Release\CALC__.Properties.Resources.resources
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Release\CALC+-.csproj.GenerateResource.Cache
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Release\CALC+-.exe
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Release\CALC+-.pdb

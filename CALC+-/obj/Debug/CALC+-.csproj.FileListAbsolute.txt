@@ -1,0 +1,41 @@
+I:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\bin\Debug\CALC+-.exe.config
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\bin\Debug\CALC+-.exe.config
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\bin\Debug\CALC+-.exe
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\bin\Debug\CALC+-.pdb
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.csprojResolveAssemblyReference.cache
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC__.telaPrincipalForm.resources
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC__.Properties.Resources.resources
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.csproj.GenerateResource.Cache
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.exe
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.pdb
+G:\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC__.TelaPrincipal.resources
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\bin\Debug\CALC+-.exe.config
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.exe
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.pdb
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\bin\Debug\CALC+-.exe
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\bin\Debug\CALC+-.pdb
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.csprojResolveAssemblyReference.cache
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC__.TelaPrincipal.resources
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC__.telaPrincipalForm.resources
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC__.Properties.Resources.resources
+C:\Users\LiraWhite\Documents\PROGRAMAÇÃO LINEAR\PROJETO PL\CALC+-\CALC+-\obj\Debug\CALC+-.csproj.GenerateResource.Cache
+C:\Users\ta4007\Documents\CALC+-\CALC+-\bin\Debug\CALC+-.exe.config
+C:\Users\ta4007\Documents\CALC+-\CALC+-\bin\Debug\CALC+-.exe
+C:\Users\ta4007\Documents\CALC+-\CALC+-\bin\Debug\CALC+-.pdb
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC+-.csprojAssemblyReference.cache
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC__.TelaPrincipal.resources
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC__.telaPrincipalForm.resources
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC__.Properties.Resources.resources
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC+-.csproj.GenerateResource.cache
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC+-.csproj.CoreCompileInputs.cache
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC+-.exe
+C:\Users\ta4007\Documents\CALC+-\CALC+-\obj\Debug\CALC+-.pdb
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\bin\Debug\CALC+-.exe.config
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Debug\CALC+-.exe
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Debug\CALC+-.pdb
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\bin\Debug\CALC+-.exe
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\bin\Debug\CALC+-.pdb
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Debug\CALC__.TelaPrincipal.resources
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Debug\CALC__.telaPrincipalForm.resources
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Debug\CALC__.Properties.Resources.resources
+C:\Users\BRUNODOSSANTOSVALLIN\Desktop\CALC+-\CALC+-\obj\Debug\CALC+-.csproj.GenerateResource.Cache
