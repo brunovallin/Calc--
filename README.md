@@ -10,7 +10,7 @@ Foi utilizada para a resolução os sistemas de até 3x3 através da Regra de Sa
 **Espero que te ajude. ^.^**
 
 ### W.I.P.
-**Este programa está construção, sendo assim algumas verificações devem ser feitas:**
+**Este programa em está construção, sendo assim algumas verificações devem ser feitas:**
 * Não é possível colocar mais do que 3 restrições.
 * Para maximização, não introduza inequações com >=.
 * Para minimização, não introduza inequações com <=.
