@@ -26,7 +26,7 @@ namespace CALC__
             maximizacaoRadioButton.Checked = true;
             restricaoInequaComboBox.Items.Add(">=");
             restricaoInequaComboBox.Items.Add("<=");
-            msglabel.Text = string.Format("Aplicativo Calc+- 'Versão Alpha'.{0}Projeto disponível em:", Environment.NewLine);
+            msglabel.Text = "Aplicativo Calc+- 'Versão Alpha'. Projeto disponível em:";
             linkLabel1.Text = "github.com/brunovallin/CalcPlusMinus";
             linkLabel1.Links.Add(0, 50, "https://github.com/brunovallin/CalcPlusMinus");
         }
@@ -69,7 +69,8 @@ namespace CALC__
                 funObj = new FuncaoObjetivo()
                 {
                     NomeVarX = nomeXTextBox.Text.Trim(),
-                    NomeVarY = nomeYTextBox.Text.Trim()
+                    NomeVarY = nomeYTextBox.Text.Trim(),
+                    ValidaOperacao = maximizacaoRadioButton.Checked ? "Maximização" : "Minimização"
                 };
 
                 if (valorXTextBox.Text.Equals(""))
@@ -82,6 +83,7 @@ namespace CALC__
                     throw new InvalidOperationException("Variável Y não possui valor para calcular.");
                 }
                 funObj.ValorY = double.Parse(valorYTextBox.Text.Trim());
+
                 MessageBox.Show("Função Objetivo definida com sucesso!", "Sucesso");
             }
             catch (Exception ex)
@@ -101,12 +103,16 @@ namespace CALC__
             {
                 Restricoes restricao = new Restricoes()
                 {
-                    ValorX = double.Parse(restricaoXTextBox.Text.Trim()),
-                    ValorY = double.Parse(restricaoYTextBox.Text.Trim()),
+                    ValorX = restricaoXTextBox.Text.Trim().Equals(string.Empty) ? 0.0 : double.Parse(restricaoXTextBox.Text),
+                    ValorY = restricaoYTextBox.Text.Trim().Equals(string.Empty) ? 0.0 : double.Parse(restricaoYTextBox.Text),
                     Operacao = (string)restricaoInequaComboBox.SelectedItem,
-                    LimiteRestricao = double.Parse(limiteRestricaoTextBox.Text.Trim()),
-                    RestricaoCompleta = string.Format("{0}x + {1}y {2} {3}", restricaoXTextBox.Text.Trim(), restricaoYTextBox.Text.Trim(), restricaoInequaComboBox.SelectedItem, limiteRestricaoTextBox.Text.Trim())
+                    LimiteRestricao = double.Parse(limiteRestricaoTextBox.Text.Trim())
                 };
+                if ((restricao.Operacao.Equals("<=") && funObj.ValidaOperacao.Equals("Minimização")) || ((restricao.Operacao.Equals(">=") && funObj.ValidaOperacao.Equals("Maximização"))))
+                {
+                    throw new InvalidOperationException("Restrição não compatível com a Função Objetivo");
+                }
+                restricao.RestricaoCompleta = string.Format("{0}x + {1}y {2} {3}", restricao.ValorX, restricao.ValorY, restricaoInequaComboBox.SelectedItem, limiteRestricaoTextBox.Text.Trim());
                 foreach (var item in restricoes)
                 {
                     if (item.RestricaoCompleta.Equals(restricao.RestricaoCompleta))
@@ -215,16 +221,11 @@ namespace CALC__
         /// <returns></returns>
         public string SolucaoOtima(FuncaoObjetivo f, List<Restricoes> restr)
         {
-            if(funObj == null)
+            if (funObj == null)
             {
                 throw new InvalidOperationException("Não há função objetivo definida");
             }
             double x, y, z, a;
-            //List<Restricoes> restricoes = new List<Restricoes>();
-            //foreach (var item in restr)
-            //{
-            //    restr.Add(item);
-            //}                        
 
             switch (restricoesListBox.Items.Count)
             {
@@ -242,21 +243,33 @@ namespace CALC__
                     f.X = x < 0 ? x * -1 : x;
                     f.Y = y < 0 ? y * -1 : y;
                     break;
-                case 4:
-                    //a = Matriz.MatrizDeterminanteA4x4(Matriz.DefinirMatriz(restr));
-                    //x = Matriz.MatrizDeterminanteX4x4(Matriz.DefinirMatriz(restr)) / a;
-                    //y = Matriz.MatrizDeterminanteY4x4(Matriz.DefinirMatriz(restr)) / a;
-                    //f.X = x < 0 ? x * -1 : x;
-                    //f.Y = y < 0 ? y * -1 : y;
-                    break;
+                //case 4:
+                //    a = Matriz.MatrizDeterminanteA4x4(Matriz.DefinirMatriz(restr));
+                //    x = Matriz.MatrizDeterminanteX4x4(Matriz.DefinirMatriz(restr)) / a;
+                //    y = Matriz.MatrizDeterminanteY4x4(Matriz.DefinirMatriz(restr)) / a;
+                //    f.X = x < 0 ? x * -1 : x;
+                //    f.Y = y < 0 ? y * -1 : y;
+                //    break;
+                //case 5:
+                //    a = Matriz.MatrizDeterminanteA5x5(Matriz.DefinirMatriz(restr));
+                //    x = Matriz.MatrizDeterminanteX5x5(Matriz.DefinirMatriz(restr)) / a;
+                //    y = Matriz.MatrizDeterminanteY5x5(Matriz.DefinirMatriz(restr)) / a;
+                //    f.X = x < 0 ? x * -1 : x;
+                //    f.Y = y < 0 ? y * -1 : y;
+                //    break;
                 default:
+                    a = Matriz.MatrizDeterminanteA3x3(Matriz.DefinirMatriz(restr));
+                    x = Matriz.MatrizDeterminanteX3x3(Matriz.DefinirMatriz(restr)) / a;
+                    y = Matriz.MatrizDeterminanteY3x3(Matriz.DefinirMatriz(restr)) / a;
+                    f.X = x < 0 ? x * -1 : x;
+                    f.Y = y < 0 ? y * -1 : y;
                     break;
             }
-            if (maximizacaoRadioButton.Checked && Restricoes.ValidarRestricoesMaximizacao(restr, maximizacaoRadioButton.Checked))
+            if (maximizacaoRadioButton.Checked)
             {
                 f.ValidaOperacao = "maximização";
             }
-            else if (minimizacaoRadioButton.Checked && Restricoes.ValidarRestricoesMinimizacao(restr, maximizacaoRadioButton.Checked))
+            else if (minimizacaoRadioButton.Checked)
             {
                 f.ValidaOperacao = "minimização";
             }
@@ -265,60 +278,6 @@ namespace CALC__
                 throw new InvalidOperationException("Não há operação de otimização selecionada");
             }
             f.ValorOtimo = f.ValorX * f.X + f.ValorY * f.Y;
-            //List<Coord> coordenadas = new List<Coord>();
-            //Coord coordenada = new Coord();
-            #region PorCoordenada
-            //try
-            //{
-            //    foreach (var item in restr)
-            //    {
-            //        x = Coord.AtribuirCoordX(item);
-            //        y = Coord.AtribuirCoordYComValordeX(item, x);
-            //        coordenada = new Coord(x, y);
-            //        coordenadas.Add(coordenada);
-            //        restricoes.Add(item.AtribuirRestricoes(item, coordenada));
-            //        y = Coord.AtribuirCoordY(item, coordenada.CoordX);
-            //        x = Coord.AtribuirCoordXComValorY(item, y);
-            //        coordenada = new Coord(x, y);
-            //        coordenadas.Add(coordenada);
-            //        restricoes.Add(item.AtribuirRestricoes(item, coordenada));
-            //    }
-
-            //    foreach (var item in coordenadas)
-            //    {
-            //        if (Restricoes.ValidarRestricoes(restricoes))
-            //        {
-            //            f.ValorOtimo = f.ValorX * item.CoordX + f.ValorY * item.CoordY;
-            //            if (f.ValidaOperacao.Equals(1))
-            //            {
-            //                otimizacao = "minimização";
-            //                if (result > f.ValorOtimo)
-            //                {
-            //                    f.X = item.CoordX;
-            //                    f.Y = item.CoordY;
-            //                    result = f.ValorOtimo;
-            //                }
-            //            }
-            //            else
-            //            {
-            //                otimizacao = "maximização";
-            //                if (result < f.ValorOtimo)
-            //                {
-            //                    f.X = item.CoordX;
-            //                    f.Y = item.CoordY;
-            //                    result = f.ValorOtimo;
-            //                }
-            //            }
-
-            //        }
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-
-            //    throw new Exception(ex.Message);
-            //} 
-            #endregion
             return string.Format("A Solução ótima desta operação será:{6}{0:n2} {1}{6}{2:n2} {3} para {4} esta operação.{6}Total:{5:n2}", f.X, f.NomeVarX, f.Y, f.NomeVarY, f.ValidaOperacao, f.ValorOtimo, Environment.NewLine);
         }
 

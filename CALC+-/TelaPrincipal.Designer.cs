@@ -88,7 +88,7 @@
             this.nomeVarDecisaoGroupBox.Controls.Add(this.funcaoObjetivoXLabel);
             this.nomeVarDecisaoGroupBox.Controls.Add(this.nomeXTextBox);
             this.nomeVarDecisaoGroupBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nomeVarDecisaoGroupBox.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.nomeVarDecisaoGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(24)))));
             this.nomeVarDecisaoGroupBox.Location = new System.Drawing.Point(6, 27);
             this.nomeVarDecisaoGroupBox.Name = "nomeVarDecisaoGroupBox";
             this.nomeVarDecisaoGroupBox.Size = new System.Drawing.Size(505, 90);
@@ -139,7 +139,7 @@
             this.tipoFuncaoGroupBox.Controls.Add(this.minimizacaoRadioButton);
             this.tipoFuncaoGroupBox.Controls.Add(this.maximizacaoRadioButton);
             this.tipoFuncaoGroupBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8F);
-            this.tipoFuncaoGroupBox.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.tipoFuncaoGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(24)))));
             this.tipoFuncaoGroupBox.Location = new System.Drawing.Point(6, 213);
             this.tipoFuncaoGroupBox.Name = "tipoFuncaoGroupBox";
             this.tipoFuncaoGroupBox.Size = new System.Drawing.Size(246, 52);
@@ -177,13 +177,13 @@
             this.funcaoObjetivoValoresgroupBox.Controls.Add(this.valorYTextBox);
             this.funcaoObjetivoValoresgroupBox.Controls.Add(this.valorXTextBox);
             this.funcaoObjetivoValoresgroupBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.funcaoObjetivoValoresgroupBox.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.funcaoObjetivoValoresgroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(24)))));
             this.funcaoObjetivoValoresgroupBox.Location = new System.Drawing.Point(6, 123);
             this.funcaoObjetivoValoresgroupBox.Name = "funcaoObjetivoValoresgroupBox";
             this.funcaoObjetivoValoresgroupBox.Size = new System.Drawing.Size(505, 84);
             this.funcaoObjetivoValoresgroupBox.TabIndex = 4;
             this.funcaoObjetivoValoresgroupBox.TabStop = false;
-            this.funcaoObjetivoValoresgroupBox.Text = "Função Objetivo";
+            this.funcaoObjetivoValoresgroupBox.Text = "Coeficientes da Função Objetivo";
             // 
             // nomeYLabel
             // 
@@ -223,8 +223,8 @@
             // 
             // funcaoObjetivoButton
             // 
-            this.funcaoObjetivoButton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.funcaoObjetivoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.funcaoObjetivoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.funcaoObjetivoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.funcaoObjetivoButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.funcaoObjetivoButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.funcaoObjetivoButton.Location = new System.Drawing.Point(313, 229);
@@ -237,12 +237,13 @@
             // 
             // funcaoObjetivodefGroupBox
             // 
+            this.funcaoObjetivodefGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
             this.funcaoObjetivodefGroupBox.Controls.Add(this.funcaoObjetivoButton);
             this.funcaoObjetivodefGroupBox.Controls.Add(this.funcaoObjetivoValoresgroupBox);
             this.funcaoObjetivodefGroupBox.Controls.Add(this.tipoFuncaoGroupBox);
             this.funcaoObjetivodefGroupBox.Controls.Add(this.nomeVarDecisaoGroupBox);
             this.funcaoObjetivodefGroupBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.funcaoObjetivodefGroupBox.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.funcaoObjetivodefGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(24)))));
             this.funcaoObjetivodefGroupBox.Location = new System.Drawing.Point(12, 49);
             this.funcaoObjetivodefGroupBox.Name = "funcaoObjetivodefGroupBox";
             this.funcaoObjetivodefGroupBox.Size = new System.Drawing.Size(521, 274);
@@ -252,6 +253,7 @@
             // 
             // restricaoGroupBox
             // 
+            this.restricaoGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
             this.restricaoGroupBox.Controls.Add(this.restricaoInequaComboBox);
             this.restricaoGroupBox.Controls.Add(this.delRestricaoButton);
             this.restricaoGroupBox.Controls.Add(this.addRestricaoButton);
@@ -262,8 +264,8 @@
             this.restricaoGroupBox.Controls.Add(this.restricaoXLabel);
             this.restricaoGroupBox.Controls.Add(this.restricoesListBox);
             this.restricaoGroupBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F);
-            this.restricaoGroupBox.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.restricaoGroupBox.Location = new System.Drawing.Point(551, 49);
+            this.restricaoGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(24)))));
+            this.restricaoGroupBox.Location = new System.Drawing.Point(533, 49);
             this.restricaoGroupBox.Name = "restricaoGroupBox";
             this.restricaoGroupBox.Size = new System.Drawing.Size(396, 274);
             this.restricaoGroupBox.TabIndex = 6;
@@ -282,8 +284,8 @@
             // 
             // delRestricaoButton
             // 
-            this.delRestricaoButton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.delRestricaoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.delRestricaoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(45)))));
+            this.delRestricaoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delRestricaoButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.delRestricaoButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.delRestricaoButton.Location = new System.Drawing.Point(37, 58);
@@ -296,8 +298,8 @@
             // 
             // addRestricaoButton
             // 
-            this.addRestricaoButton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.addRestricaoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.addRestricaoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.addRestricaoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addRestricaoButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addRestricaoButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addRestricaoButton.Location = new System.Drawing.Point(205, 58);
@@ -367,8 +369,8 @@
             // 
             // copyClipboarButton
             // 
-            this.copyClipboarButton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.copyClipboarButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.copyClipboarButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.copyClipboarButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.copyClipboarButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.copyClipboarButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.copyClipboarButton.Location = new System.Drawing.Point(351, 86);
@@ -381,8 +383,8 @@
             // 
             // resetOperaçãoButton
             // 
-            this.resetOperaçãoButton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.resetOperaçãoButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resetOperaçãoButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(72)))), ((int)(((byte)(45)))));
+            this.resetOperaçãoButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resetOperaçãoButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.resetOperaçãoButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.resetOperaçãoButton.Location = new System.Drawing.Point(351, 139);
@@ -395,13 +397,14 @@
             // 
             // solucaoOtimaGroupBox
             // 
+            this.solucaoOtimaGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
             this.solucaoOtimaGroupBox.Controls.Add(this.resolucaoDoProblemaButton);
             this.solucaoOtimaGroupBox.Controls.Add(this.resetOperaçãoButton);
             this.solucaoOtimaGroupBox.Controls.Add(this.resultadoTextBox);
             this.solucaoOtimaGroupBox.Controls.Add(this.copyClipboarButton);
             this.solucaoOtimaGroupBox.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F);
-            this.solucaoOtimaGroupBox.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.solucaoOtimaGroupBox.Location = new System.Drawing.Point(12, 329);
+            this.solucaoOtimaGroupBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(24)))));
+            this.solucaoOtimaGroupBox.Location = new System.Drawing.Point(12, 323);
             this.solucaoOtimaGroupBox.Name = "solucaoOtimaGroupBox";
             this.solucaoOtimaGroupBox.Size = new System.Drawing.Size(521, 188);
             this.solucaoOtimaGroupBox.TabIndex = 10;
@@ -410,8 +413,8 @@
             // 
             // resolucaoDoProblemaButton
             // 
-            this.resolucaoDoProblemaButton.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.resolucaoDoProblemaButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.resolucaoDoProblemaButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(79)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.resolucaoDoProblemaButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.resolucaoDoProblemaButton.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 8.25F);
             this.resolucaoDoProblemaButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.resolucaoDoProblemaButton.Location = new System.Drawing.Point(351, 20);
@@ -426,7 +429,8 @@
             // 
             this.msglabel.AutoSize = true;
             this.msglabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.msglabel.Location = new System.Drawing.Point(547, 340);
+            this.msglabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
+            this.msglabel.Location = new System.Drawing.Point(140, 16);
             this.msglabel.Name = "msglabel";
             this.msglabel.Size = new System.Drawing.Size(51, 20);
             this.msglabel.TabIndex = 11;
@@ -436,20 +440,22 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(546, 405);
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(255)))), ((int)(((byte)(253)))));
+            this.linkLabel1.Location = new System.Drawing.Point(528, 12);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(110, 25);
             this.linkLabel1.TabIndex = 12;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "linkLabel1";
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(43)))), ((int)(((byte)(58)))));
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.ClientSize = new System.Drawing.Size(960, 528);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(122)))), ((int)(((byte)(140)))));
+            this.ClientSize = new System.Drawing.Size(935, 521);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.msglabel);
             this.Controls.Add(this.solucaoOtimaGroupBox);
@@ -458,8 +464,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(976, 567);
-            this.MinimumSize = new System.Drawing.Size(976, 567);
             this.Name = "TelaPrincipal";
             this.Text = "Calc+-";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

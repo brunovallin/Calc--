@@ -78,57 +78,6 @@ namespace CALC__.Class
                 _limiteRestricao = value;
             }
         }
-        #endregion
-
-        public bool RestricaoBool { get; set; }
-
-        ///// <summary>
-        ///// Método para atribuir comparativo bool para restrições com os dados previamente coletados
-        ///// </summary>
-        ///// <param name="restricao"></param>
-        ///// <param name="x"></param>
-        ///// <param name="y"></param>
-        ///// <returns></returns>
-        //public Restricoes AtribuirRestricoes(Restricoes restricao, Coord coordenadas)
-        //{
-        //    Restricoes restrtratada = restricao;
-        //    switch (restricao.Operacao)
-        //    {
-        //        case ">=":
-        //            restrtratada.RestricaoBool = (restricao.ValorX * coordenadas.CoordX + restricao.ValorY * coordenadas.CoordY >= restricao.LimiteRestricao);
-        //            break;
-        //        case "<=":
-        //            restrtratada.RestricaoBool = (restricao.ValorX * coordenadas.CoordX + restricao.ValorY * coordenadas.CoordY <= restricao.LimiteRestricao);
-        //            break;
-        //        case "=":
-        //            restrtratada.RestricaoBool = (restricao.ValorX * coordenadas.CoordX + restricao.ValorY * coordenadas.CoordY == restricao.LimiteRestricao);
-        //            break;
-        //        default:
-        //            throw new InvalidOperationException("Erro ao tratar restrição");
-        //    }
-        //    return restrtratada;
-        //}
-
-        /// <summary>
-        /// Método validando coordenadas na restrição já transformada em booleana
-        /// </summary>
-        /// <param name="restricoes"></param>
-        /// <returns></returns>
-        public static bool ValidarRestricoesMaximizacao(List<Restricoes> restricoes, bool flg)
-        {
-            foreach (var item in restricoes)
-            {
-                if (item.Operacao.Equals(">=") && flg == true) throw new InvalidOperationException("Esta operação não pode ser maximizada");
-            }
-            return true;
-        }
-        public static bool ValidarRestricoesMinimizacao(List<Restricoes> restricoes, bool flg)
-        {
-            foreach (var item in restricoes)
-            {
-                if (item.Operacao.Equals("<=")&& flg == false) throw new InvalidOperationException("Esta operação não pode ser minimizada");
-            }
-            return true;
-        }
+        #endregion        
     }
 }

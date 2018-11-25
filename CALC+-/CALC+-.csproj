@@ -56,7 +56,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Coord.cs" />
     <Compile Include="Class\FuncaoObjetivo.cs" />
     <Compile Include="Class\Matriz.cs" />
     <Compile Include="Class\Restricoes.cs" />

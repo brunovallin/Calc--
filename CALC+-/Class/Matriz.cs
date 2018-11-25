@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -212,5 +213,241 @@ namespace CALC__.Class
             return detZ;
         }
         #endregion
+
+        //#region Determinantes 4x4
+        ///// <summary>
+        ///// Método para definir a determinante A de uma matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante Absoluta</returns>
+        //public static double MatrizDeterminanteA4x4(IEnumerable<Matriz> matrizext)
+        //{
+
+            
+        //    double detA = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.X;
+        //        matriz[i, 1] = item.Y;
+        //        matriz[i, 2] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 2) ? 1 : 0;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        i++;
+        //    }
+
+        //    detA = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[0, 3]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[0, 2] * matriz[1, 3])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[3, 2] * matriz[2, 3]) +
+        //        (matriz[0, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3]) +
+        //        (matriz[3, 0] * matriz[2, 1] * matriz[1, 2] * matriz[0, 3]));
+
+        //    return detA;
+        //}
+
+        ///// <summary>
+        ///// Método para definir a determinante X de uma matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante X</returns>
+        //public static double MatrizDeterminanteX4x4(IEnumerable<Matriz> matrizext)
+        //{
+        //    double detX = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.Total;
+        //        matriz[i, 1] = item.Y;
+        //        matriz[i, 2] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 2) ? 1 : 0;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        i++;
+        //    }
+        //    detX = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[0, 3]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[0, 2] * matriz[1, 3])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[3, 2] * matriz[2, 3]) +
+        //        (matriz[0, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3]) +
+        //        (matriz[3, 0] * matriz[2, 1] * matriz[1, 2] * matriz[0, 3]));
+
+        //    return detX;
+        //}
+
+        ///// <summary>
+        ///// Método para definir a determinante Y de uma Matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante Y</returns>
+        //public static double MatrizDeterminanteY4x4(IEnumerable<Matriz> matrizext)
+        //{
+        //    double detY = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.X;
+        //        matriz[i, 1] = item.Total;
+        //        matriz[i, 2] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 2) ? 1 : 0;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        i++;
+        //    }
+        //    detY = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[0, 3]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[0, 2] * matriz[1, 3])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[3, 2] * matriz[2, 3]) +
+        //        (matriz[0, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3]) +
+        //        (matriz[3, 0] * matriz[2, 1] * matriz[1, 2] * matriz[0, 3]));
+
+        //    return detY;
+        //}
+
+        ///// <summary>
+        ///// Método para definir a determinante Z de uma Matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante Z</returns>
+        //public static double MatrizDeterminanteZ4x4(IEnumerable<Matriz> matrizext)
+        //{
+        //    double detZ = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.X;
+        //        matriz[i, 1] = item.Y;
+        //        matriz[i, 2] = item.Total;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        i++;
+        //    }
+        //    detZ = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[0, 3]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[0, 2] * matriz[1, 3])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[3, 2] * matriz[2, 3]) +
+        //        (matriz[0, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3]) +
+        //        (matriz[3, 0] * matriz[2, 1] * matriz[1, 2] * matriz[0, 3]));
+
+        //    return detZ;
+        //}
+        //#endregion
+
+        //#region Determinante 5x5
+        ///// <summary>
+        ///// Método para definir a determinante A de uma matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante Absoluta</returns>
+        //public static double MatrizDeterminanteA5x5(IEnumerable<Matriz> matrizext)
+        //{
+        //    double detA = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.X;
+        //        matriz[i, 1] = item.Y;
+        //        matriz[i, 2] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 2) ? 1 : 0;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        matriz[i, 4] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 4) ? 1 : 0;
+        //        i++;
+        //    }
+
+        //    detA = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3] * matriz[4, 4]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[4, 3] * matriz[0, 4]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[4, 2] * matriz[0, 3] * matriz[1, 4])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[4, 2] * matriz[3, 3] * matriz[2, 4]) +
+        //        (matriz[0, 0] * matriz[4, 1] * matriz[3, 2] * matriz[2, 3] * matriz[1, 4]) +
+        //        (matriz[4, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3] * matriz[0, 4]));
+
+        //    return detA;
+        //}
+
+        ///// <summary>
+        ///// Método para definir a determinante X de uma matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante X</returns>
+        //public static double MatrizDeterminanteX5x5(IEnumerable<Matriz> matrizext)
+        //{
+        //    double detX = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.Total;
+        //        matriz[i, 1] = item.Y;
+        //        matriz[i, 2] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 2) ? 1 : 0;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        matriz[i, 4] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 4) ? 1 : 0;
+        //        i++;
+        //    }
+        //    detX = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3] * matriz[4, 4]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[4, 3] * matriz[0, 4]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[4, 2] * matriz[0, 3] * matriz[1, 4])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[4, 2] * matriz[3, 3] * matriz[2, 4]) +
+        //        (matriz[0, 0] * matriz[4, 1] * matriz[3, 2] * matriz[2, 3] * matriz[1, 4]) +
+        //        (matriz[4, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3] * matriz[0, 4]));
+
+        //    return detX;
+        //}
+
+        ///// <summary>
+        ///// Método para definir a determinante Y de uma Matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante Y</returns>
+        //public static double MatrizDeterminanteY5x5(IEnumerable<Matriz> matrizext)
+        //{
+        //    double detY = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.X;
+        //        matriz[i, 1] = item.Total;
+        //        matriz[i, 2] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 2) ? 1 : 0;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        matriz[i, 4] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 4) ? 1 : 0;
+        //        i++;
+        //    }
+        //    detY = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3] * matriz[4, 4]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[4, 3] * matriz[0, 4]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[4, 2] * matriz[0, 3] * matriz[1, 4])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[4, 2] * matriz[3, 3] * matriz[2, 4]) +
+        //        (matriz[0, 0] * matriz[4, 1] * matriz[3, 2] * matriz[2, 3] * matriz[1, 4]) +
+        //        (matriz[4, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3] * matriz[0, 4]));
+
+        //    return detY;
+        //}
+
+        ///// <summary>
+        ///// Método para definir a determinante Z de uma Matriz
+        ///// </summary>
+        ///// <param name="matrizext"></param>
+        ///// <returns>Retorna o valor da determinante Z</returns>
+        //public static double MatrizDeterminanteZ5x5(IEnumerable<Matriz> matrizext)
+        //{
+        //    double detZ = 0;
+        //    int i = 0;
+        //    double[,] matriz = new double[matrizext.Count(), matrizext.Count()];
+        //    foreach (var item in matrizext)
+        //    {
+        //        matriz[i, 0] = item.X;
+        //        matriz[i, 1] = item.Y;
+        //        matriz[i, 2] = item.Total;
+        //        matriz[i, 3] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 3) ? 1 : 0;
+        //        matriz[i, 4] = (item.X > 0 && item.Y == 0) || (item.X > 0 && item.Y > 0 && i == 4) ? 1 : 0;
+        //        i++;
+        //    }
+        //    detZ = ((matriz[0, 0] * matriz[1, 1] * matriz[2, 2] * matriz[3, 3] * matriz[4, 4]) +
+        //        (matriz[1, 0] * matriz[2, 1] * matriz[3, 2] * matriz[4, 3] * matriz[0, 4]) +
+        //        (matriz[2, 0] * matriz[3, 1] * matriz[4, 2] * matriz[0, 3] * matriz[1, 4])) -
+        //        ((matriz[1, 0] * matriz[0, 1] * matriz[4, 2] * matriz[3, 3] * matriz[2, 4]) +
+        //        (matriz[0, 0] * matriz[4, 1] * matriz[3, 2] * matriz[2, 3] * matriz[1, 4]) +
+        //        (matriz[4, 0] * matriz[3, 1] * matriz[2, 2] * matriz[1, 3] * matriz[0, 4]));
+
+        //    return detZ;
+        //}
+        //#endregion
     }
 }
